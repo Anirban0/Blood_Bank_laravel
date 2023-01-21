@@ -241,7 +241,6 @@
                                           placeholder="Campaign id"
                                           aria-label="campid"
                                           aria-describedby="basic-addon1"
-                                          required
                                           />
                                       </div>
                                   

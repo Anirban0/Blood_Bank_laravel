@@ -212,6 +212,10 @@ class dbController extends Controller
         
         if(Recipient::where('recipient_adhaar_no','=',$req->r_id)->exists())
         {
+            if(Donor::where('donor_adhaar_no','=',$req->r_id)->exists())
+            {
+                return back()->with('allotFail','Recipient and donor are same!');
+            }
             $recipient = Recipient::where('recipient_adhaar_no','=',$req->r_id)->first();
             $bloodCount = Blood::where('blood_group','=',$recipient->blood_group)
                             ->where('availablity','=',1)
