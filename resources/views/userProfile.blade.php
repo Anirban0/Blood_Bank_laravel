@@ -61,7 +61,6 @@
         <div class="card-body shadow-lg">
             <h5 class="card-title text-danger">Donation Status</h5>
             <h6 class="card-subtitle mb-2 text-muted">You are eligible for donation. Reach our nearest center for donatioin.</h6><br><br>
-            <p class="card-text"><strong>Your last donation details</strong></p>
         </div>
     </div>
     @endif
@@ -70,7 +69,6 @@
         <div class="card-body shadow-lg">
             <h5 class="card-title text-danger">Donation Status</h5>
             <h6 class="card-subtitle mb-2 text-muted">You are Not eligible for donation.</h6><br><br>
-            <p class="card-text"><strong>Your last donation details</strong></p>
         </div>
     </div>
     @endif

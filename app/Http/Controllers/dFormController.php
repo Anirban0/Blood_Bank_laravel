@@ -51,7 +51,7 @@ class dFormController extends Controller
         {
             if($req->r1=="no")
         {
-            return back()->with('donorEligible','You are eligible for donatiion');
+            return redirect('/userProfile')->with('donorEligible','You are eligible for donatiion');
         }
         }
         }
@@ -64,7 +64,7 @@ class dFormController extends Controller
         }
         }
         }
-        return back()->with('donorNotEligible','You are not eligible for donation');
+        return redirect('userProfile')->with('donorNotEligible','You are not eligible for donation');
     }
 
     function donatStatusF(Request $req)
